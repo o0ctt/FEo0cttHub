@@ -29,6 +29,7 @@ local uimaker = Instance.new("TextLabel")
 local grzeguimaker = Instance.new("TextLabel")
 local scripter = Instance.new("TextLabel")
 local o0cttscripter = Instance.new("TextLabel")
+local btoolsbutton = Instance.new("TextButton")
 FEo0cttHub.Name = "FEo0cttHub"
 FEo0cttHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 FEo0cttHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -151,7 +152,18 @@ o0cttscripter.TextColor3 = Color3.fromRGB(255, 255, 255)
 o0cttscripter.TextScaled = true
 o0cttscripter.TextSize = 14.000
 o0cttscripter.TextWrapped = true
-local function BYLI_fake_script()
+btoolsbutton.Name = "btoolsbutton"
+btoolsbutton.Parent = main
+btoolsbutton.BackgroundColor3 = Color3.fromRGB(136, 136, 136)
+btoolsbutton.BorderColor3 = Color3.fromRGB(66, 66, 66)
+btoolsbutton.BorderSizePixel = 3
+btoolsbutton.Position = UDim2.new(0.0421052612, 0, 0.218446612, 0)
+btoolsbutton.Size = UDim2.new(0, 53, 0, 23)
+btoolsbutton.Font = Enum.Font.SourceSansBold
+btoolsbutton.Text = "Scripts"
+btoolsbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+btoolsbutton.TextSize = 14.000
+local function LZBYERV_fake_script()
 	local script = Instance.new('LocalScript', scriptsbutton)
 
 	local credits = script.Parent.Parent.credits
@@ -168,8 +180,8 @@ local function BYLI_fake_script()
 		end
 	end)
 end
-coroutine.wrap(BYLI_fake_script)()
-local function DHWCRL_fake_script()
+coroutine.wrap(LZBYERV_fake_script)()
+local function NXFEW_fake_script()
 	local script = Instance.new('LocalScript', robothatboi)
 
 	local thisb = script.Parent
@@ -220,10 +232,10 @@ local function DHWCRL_fake_script()
 		local mov = {};
 		local mov2 = {};
 	
-		local Head = "MeshPartAccessory"
-		local x = -2
-		local y = 2.8
-		local z = 3
+		local Head = "MeshPartAccessory" --press f9 and find the hat that looks like a heads name and put it here
+		local x = -2   --Edit Position for head
+		local y = 2.8   --Edit Position for head x2
+		local z = 3 --Edit Position for head x3
 	
 	
 		local Hats = {rightarm = Character:WaitForChild("Hat1"),
@@ -1964,8 +1976,8 @@ local function DHWCRL_fake_script()
 		end
 	end)
 end
-coroutine.wrap(DHWCRL_fake_script)()
-local function GLIGM_fake_script()
+coroutine.wrap(NXFEW_fake_script)()
+local function WXEAVC_fake_script()
 	local script = Instance.new('LocalScript', creditsbutton)
 
 	local credits = script.Parent.Parent.credits
@@ -1982,8 +1994,22 @@ local function GLIGM_fake_script()
 		end
 	end)
 end
-coroutine.wrap(GLIGM_fake_script)()
-local function FWEFB_fake_script()
+coroutine.wrap(WXEAVC_fake_script)()
+local function TZCVA_fake_script()
+	local script = Instance.new('LocalScript', btoolsbutton)
+
+	local thisb = script.Parent
+	thisb.MouseButton1Down:Connect(function()
+		a = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+		a.BinType = 2
+		b = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+		b.BinType = 3
+		c = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+		c.BinType = 4
+	end)
+end
+coroutine.wrap(TZCVA_fake_script)()
+local function MRCY_fake_script() -- FEo0cttHub.script#2 
 	local script = Instance.new('LocalScript', FEo0cttHub)
 
 	game.StarterGui:SetCore("SendNotification", {
@@ -1992,8 +2018,8 @@ local function FWEFB_fake_script()
 		Duration = "50";
 	})
 end
-coroutine.wrap(FWEFB_fake_script)()
-local function CQPTX_fake_script()
+coroutine.wrap(MRCY_fake_script)()
+local function RZSCS_fake_script()
 	local script = Instance.new('Script', FEo0cttHub)
 
 	frame = script.Parent.main
@@ -2001,4 +2027,4 @@ local function CQPTX_fake_script()
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(CQPTX_fake_script)()
+coroutine.wrap(RZSCS_fake_script)()
