@@ -160,7 +160,7 @@ btoolsbutton.BorderSizePixel = 3
 btoolsbutton.Position = UDim2.new(0.0421052612, 0, 0.218446612, 0)
 btoolsbutton.Size = UDim2.new(0, 53, 0, 23)
 btoolsbutton.Font = Enum.Font.SourceSansBold
-btoolsbutton.Text = "Scripts"
+btoolsbutton.Text = "BTools"
 btoolsbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
 btoolsbutton.TextSize = 14.000
 local function LZBYERV_fake_script()
